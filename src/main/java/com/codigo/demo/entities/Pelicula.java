@@ -29,6 +29,6 @@ public class Pelicula implements Serializable {
   @Temporal(TemporalType.DATE)
   private Date fechaEstreno;
   private Genero genero;
-  private List<Actor> protagonistas;
+  // private List<Actor> protagonistas;
 
 }
