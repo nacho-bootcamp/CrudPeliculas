@@ -2,7 +2,7 @@ package com.codigo.demo.entities;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
+// import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
