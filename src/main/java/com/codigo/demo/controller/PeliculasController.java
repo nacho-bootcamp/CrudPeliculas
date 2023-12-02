@@ -24,6 +24,7 @@ public class PeliculasController {
     Pelicula pelicula = new Pelicula();
     model.addAttribute("pelicula", pelicula);
     model.addAttribute("titulo", "Nueva Pelicula");
+    model.addAttribute("generos", genero.findAll());
     return "pelicula";
   }
 
@@ -38,10 +39,11 @@ public class PeliculasController {
 
   @PostMapping("/pelicula")
   public String guardar(Pelicula pelicula) {
+    service.save(pelicula);
     return "redirect:home";
   }
 
-  @GetMapping({ "/", "/home", "/index" })
+  @GetMapping({ "/", "/home", "/index " })
   public String home() {
     return "home";
   }

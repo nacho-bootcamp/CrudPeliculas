@@ -20,7 +20,7 @@ public class Actor implements Serializable {
   private static final long serialVersionUID = -158416165446L;
 
   @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   private String nombre;
   @Column(name = "url_imagen")

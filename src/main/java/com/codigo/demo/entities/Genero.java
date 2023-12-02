@@ -12,7 +12,7 @@ import lombok.*;
 public class Genero implements Serializable {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   private String nombre;
